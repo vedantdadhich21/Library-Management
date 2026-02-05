@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; height: 100vh ; ;">
+  
+    <form action="" id ="form" style="display: flex; flex-direction: column; justify-content: center;gap: 10px; margin-top: 48px; font-size: 24px;">
+        <div style="font-size: 36px;">Add New Books </div>
+        <label for="title">Title</label>
+        <input type="text" id="tile" name="title" required>
+        <label for="author">Author</label>
+        <input type="text"  id="author" name="author" required>
+        <label for="noOfPages">No. of Pages</label>
+        <input type="number" id="noOfPages" name="noOfPages" required>
+        <button type="submit" style="margin: 10px">Add</button>
+    </form>
+
+    <div class="books" style="min-height: 100%;">
+    
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -68,7 +68,9 @@ form.addEventListener('submit',function (e){
         e.preventDefault();
         const formData = new FormData(form);
         console.log(formData.get('title'));
+        if(library.findIndex(book =>book.title === formData.get('title')) == -1){
         addBookToLibrary(formData.get('title'),formData.get('author'),formData.get('noOfPages'),false)
+        }
 })
 
 document.addEventListener('click', function (event) {
